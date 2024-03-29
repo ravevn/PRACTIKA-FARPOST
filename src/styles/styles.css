@@ -1,0 +1,100 @@
+.task-manager-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 20px;
+}
+
+.main-content {
+  width: 75%;
+  padding: 20px;
+}
+
+.blue-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.task-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.task-card {
+  width: calc(50% - 10px);
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h3 {
+  margin-top: 0;
+}
+
+
+.task-card p {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .task-manager-container {
+    flex-direction: column-reverse;
+  }
+
+  .sidebar {
+    width: 100%;
+    order: 2;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .task-form {
+    width: 100%;
+  }
+}
+.task-form {
+  margin-bottom: 20px;
+}
+
+.task-form input[type="text"],
+.task-form select {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.task-form button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #0056b3;
+}
+
+.hide-sidebar {
+  display: none;
+}
+
+.show-form .main-content {
+  width: 75%;
+}
+
+.show-form .sidebar {
+  display: none;
+}
+

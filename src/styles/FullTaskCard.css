@@ -1,0 +1,56 @@
+.full-screen-task {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .full-task-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 600px;
+  }
+  
+  .full-task-card h3 {
+    margin-top: 0;
+  }
+  
+  .full-task-card p {
+    margin-bottom: 10px;
+  }
+  
+  .full-task-card .back-button {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .full-task-card .back-button:hover {
+    background-color: #aaa;
+  }
+  
+  .full-task-card .edit-button,
+  .full-task-card .delete-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .full-task-card .edit-button:hover,
+  .full-task-card .delete-button:hover {
+    background-color: #0056b3;
+  }
